@@ -13,11 +13,11 @@ export default {
 
             // Convert URLs to content array, detecting file type
             const content = [
-                { type: 'text', text: 'Please summarize these files:' },
-                ...urls.map(url => ({
-                    type: 'image_url',
-                    url
-                }))
+              { type: "text", text: "Please summarize these files:" },
+              ...urls.map((url) => ({
+                type: "image_url",
+                image_url:url,
+              })),
             ];
 
             const openAIResponse = await fetch('https://api.openai.com/v1/chat/completions', {
