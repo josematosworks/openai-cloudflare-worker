@@ -1,1 +1,1 @@
-# openai-cloudflare-worker
+# OpenAi Cloudflare Worker
