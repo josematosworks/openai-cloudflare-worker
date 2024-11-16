@@ -15,7 +15,7 @@ export default {
             const content = [
                 { type: 'text', text: 'Please summarize these files:' },
                 ...urls.map(url => ({
-                    type: url.toLowerCase().endsWith('.pdf') ? 'file_url' : 'image_url',
+                    type: 'image_url',
                     url
                 }))
             ];
